@@ -1,0 +1,15 @@
+<view class="swiper">
+  <view class="menu flex-center" wx:if="{{menuShow}}">
+    <view class="menu-item menu-item-{{index}} flex-center {{swiperIndex===index && 'current'}}" bind:tap="swiperClick" data-from='click' data-index="{{index}}" wx:for="{{menu}}" wx:key="index" style="{{menuStyle}}">{{item}}</view>
+    <view class="menu-flag {{!menuFlag.left && 'hide'}} {{changeType}}"  style="transform: translateX({{menuFlag.left}}px) scaleX(0.4); width: {{menuFlag.width}}px;"/>
+  </view>
+  <view class="swiper-container" style="height:{{swiperHeight}}">
+      <swiper current="{{swiperIndex}}" data-from='swiper' bindchange="swiperStart" bindanimationfinish="swiperFinish" bindtransition="swiperMoving" style="height: 100%;">
+        <swiper-item wx:for="{{menu}}" wx:key="index">
+          <view class="swiper-item-{{index}}" data-name="内容包裹">
+            <slot name="swiper-item-{{index}}"></slot>
+          </view>
+        </swiper-item>
+      </swiper>
+  </view>
+</view>

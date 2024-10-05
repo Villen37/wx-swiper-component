@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "new-swiper": "../../components/swiper/swiper"
+  }
+}

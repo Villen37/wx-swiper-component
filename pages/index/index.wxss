@@ -1,0 +1,25 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  background: linear-gradient(to bottom, #1b133d 0%,#122c43 31%,#1a2448 56%,#171d3c 100%);
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 150rpx;
+}
+.swiper-container{
+  border: 1rpx solid #fff;
+  border-radius: 8rpx;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.swiper-body{
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 0 20rpx;
+}

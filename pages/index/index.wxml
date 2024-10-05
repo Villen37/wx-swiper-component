@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="swiper-container">
+    <new-swiper menu="{{stageTabs}}" index="{{stageIndex}}"  bind:swiperChange="clickStage" menuStyle="margin:0 20rpx">
+      <view class="swiper-body" wx:for="{{stageTabs}}" wx:key="index" wx:for-index="stage" slot="swiper-item-{{stage}}">{{stagData[stage]}}</view>
+    </new-swiper>
+  </view>
+  <view>这里是其他内容</view>
+  
+</view>
