@@ -14,8 +14,6 @@
 2.  在页面的json中引入组件
 3.  在页面的wxml中使用，具体可以看index里的例子
 
-
-#### 参数
 |参数|说明|默认值|
 |:---|:---|:----:|
 |menu|顶部导航list|[]|
@@ -23,6 +21,7 @@
 |menuShow|是否展示菜单|true|
 |height|高度设置，如果设置为大于0，高度不再自动调整|0|
 |index|索引，一开始展示第几个|0|
+需要注意的是wxml中的`slot="swiper-item-{{stage}}"`，要把slot给到，stage从0-n，一一对应menu数
 
 #### 特技
 1. 博客L：[个人博客](http://blog.1z5k.com/)、[知乎同步博客](https://www.zhihu.com/creator/manage/creation/article)
