@@ -13,7 +13,6 @@ page {
   padding-top: 150rpx;
 }
 .swiper-container{
-  border: 1rpx solid #fff;
   border-radius: 8rpx;
   max-width: 100%;
   box-sizing: border-box;
@@ -21,5 +20,5 @@ page {
 .swiper-body{
   box-sizing: border-box;
   word-wrap: break-word;
-  padding: 0 20rpx;
+  padding: 0 30rpx;
 }

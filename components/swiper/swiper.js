@@ -29,6 +29,17 @@ Component({
       type: Boolean,
       value: true
     },
+    height:{
+      type: Number,
+      value: 0,
+      observer(nh,h) {
+        if(nh>0){
+          this.setData({
+            swiperHeight: nh+'rpx'
+          })
+        }
+      }
+    },
     index:{
       type: Number,
       value: 0,
@@ -117,6 +128,11 @@ Component({
 
     // 设置swiper高度
     setSwiperHeight(){
+      if(this.properties.height){
+        console.log(this.properties.height,'-----888')
+
+        return;
+      }
       const {swiperIndex=0}=this.data;
       const query = wx.createSelectorQuery().in(this);
       query.select('.swiper-item-'+swiperIndex).boundingClientRect(rect=> {
