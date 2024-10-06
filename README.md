@@ -17,7 +17,7 @@
 
 #### 参数
 |参数|说明|默认值|
-|:---|---:|:----:|
+|:---|:---|:----:|
 |menu|顶部导航list|[]|
 |menuStyle|导航整体样式|空|
 |menuShow|是否展示菜单|true|
@@ -26,5 +26,15 @@
 
 #### 特技
 1. 博客L：[个人博客](http://blog.1z5k.com/)、[知乎同步博客](https://www.zhihu.com/creator/manage/creation/article)
-2. 微信小程序开发者，相关作品有：日历小记、AI星座占星师、提前还贷月供计算器
-3. 
+2. 微信小程序开发者，相关作品有：
+
+日历小记：阳历阴历，排班待办，日记备忘录，星座老黄历
+
+AI星座占星师：星座运势，男女搭配，AI占星师为你提供意见
+
+提前还贷月供计算器：房贷、商贷、公积金贷款，各种还款计算器
+
+|日历小记|AI星座占星师|提前还贷月供计算器|
+|:---:|:---:|:----:|
+|![image.png](https://miaomushan.top/index/img/rili.jpeg)|![image.png](https://miaomushan.top/index/img/star.jpeg)|![image.png](https://img.meituan.net/chatpicture/bea8e84845d575c1e87614c560053cb790444.jpg)|
+
